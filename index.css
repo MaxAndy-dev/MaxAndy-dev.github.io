@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: rgb(245, 225, 189);
+    overflow-x: hidden;
+}
+
+.nav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:  rgb(243, 209, 147);
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 60px ;
+    transition: 0.7s;
+}
+.nav h1{
+    margin-left: 39px;
+    font-size: 15px;
+    
+}
+.nav a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav a:hover{
+    color: brown;
+    transition: 0.4s;
+}
+
+.nav .close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.slide a{
+    color: black;
+    font-size: 30px;
+}
+
+/* #content{
+    padding: 6px;
+    transition: margin-left 0.7s;
+    overflow: hidden;
+    width: 100%; 
+} */
+
+.mainTitle{
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.mainTitle .span{
+    margin-left: 12px;
+    color: brown;
+    
+}
+
+
+
+@media (max-width: 550px){
+    .mainTitle{
+        /* min-height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5em;
+    
+    }
+}
+
+main {
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+  }
+
+.container {
+    width: 80vw;
+    max-width: 620px;
+  }
+
+
+  .review {
+    background: rgb(247, 196, 103);
+    padding: 1.5rem 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    text-align: center;
+  }
+
+  .authorName{
+      color: brown;
+  }
+
+  .prev-btn,
+.next-btn {
+  color:  hsl(0, 0%, 100%);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.random-btn {
+    margin-top: 0.5rem;
+    background: brown;
+    color: white;
+    padding: 0.25rem 0.5rem;
+    text-transform: capitalize;
+    border-radius: 0.25rem;
+    transition: all 0.3s linear;
+    border: none;
+    cursor: pointer;
+  }
+  .random-btn:hover {
+    background: white;
+    color: brown;
+  }
+
+  .wha{
+      align-items: center;
+      background: transparent;
+      font-size: 1.9rem;
+      
+      /* margin-top: 6px; */
+      border-color: transparent;
+      
+  }
+  .anba{
+      font-size: 12px;
+      margin-bottom: 0;
+
+  }
+
+  .wha a{
+      color: black;
+  }
